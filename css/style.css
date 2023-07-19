@@ -3,3 +3,31 @@
     padding: 0;
     box-sizing: border-box;
 }
+main{
+    display: flex;
+}
+
+#site_sidebar{
+    width: 220px;
+    height: calc(100vh - 90px);
+}
+#site_content{
+    width: calc(100vw - 220px);
+    height: calc(100vh - 90px);
+}
+#site_footer{
+    width: 100vw;
+    height: 90px;
+}
+
+
+
+
+/* #region utilities */
+
+.debug {
+    background-color: aquamarine;
+    border: 2px dashed brown ;
+}
+
+/* #endregion utilities */
