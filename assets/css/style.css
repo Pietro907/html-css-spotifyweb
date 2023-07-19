@@ -3,10 +3,13 @@
     padding: 0;
     box-sizing: border-box;
 }
-main{
+main {
     display: flex;
+    justify-content: center;
 }
-
+footer {
+    margin: 0 auto;
+}
 #site_sidebar{
     width: 220px;
     height: calc(100vh - 90px);
@@ -15,19 +18,47 @@ main{
     justify-content: space-between;
 }
 #site_content{
+    max-width: calc(1100px - 220px);
     width: calc(100vw - 220px);
     height: calc(100vh - 90px);
 }
 #site_footer{
+    max-width: 1100px;
     width: 100vw;
     height: 90px;
+}
+.container > a {
+    padding: 0 0.5rem;
+    text-decoration: none;
 }
 .row {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: start;
+    flex-wrap: wrap;
 }
-
+.col-2 > .card {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.card {
+    width: 120px;
+}
+.card > img {
+    width: 120px;
+    height: 120px;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+}
+a > hr {
+    width: 30%;
+    margin: 0 30%;
+    padding: 1px 0;
+    background-color: greenyellow;
+}
 
 /* #region sidebar */
 
@@ -40,7 +71,7 @@ main{
     background-color: aquamarine;
     border: 2px dashed brown ;
 }
-.debug_2{
+/* debug_2{
     background-color: green;
     border: 2px dashed blue ;
     height: 100px;
@@ -49,19 +80,35 @@ main{
     background-color: yellow;
     border: 2px dashed purple ;
     height: 100px;
-}
+} */
 .debug_4 {
     background-color: gray;
     border: 2px dashed white ;
-    height: 50px;
-}
+
+} 
 /* #region space */
 
 .mrg_1 {
     margin: 1rem;
 }
+.mx-1 {
+    margin: 0 1rem;
+}
+.my-1 {
+    margin: 1rem 0;
+}
+.m_bottom{
+    margin: 0 0 1rem;
+}
+.fnt_10 {
+    font-size: 10px;
+}
+.radius_50 {
+    border-radius: 50%;
+}
 
 /* #endregion space */
+
 
 
 .flex {
@@ -73,11 +120,11 @@ main{
 .jst_btw {
     justify-content: space-between;
 }
-/* .jst_str{
-    justify-content: start;
+.jst_ctr{
+    justify-content: center;
 }
 .jst_end{
     justify-content: end;
-} */
+}
 
 /* #endregion utilities */
