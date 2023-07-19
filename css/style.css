@@ -10,6 +10,9 @@ main{
 #site_sidebar{
     width: 220px;
     height: calc(100vh - 90px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 #site_content{
     width: calc(100vw - 220px);
@@ -21,7 +24,10 @@ main{
 }
 
 
+/* #region sidebar */
 
+
+/* #endregion sidebar */
 
 /* #region utilities */
 
@@ -29,5 +35,35 @@ main{
     background-color: aquamarine;
     border: 2px dashed brown ;
 }
+.debug_2{
+    background-color: green;
+    border: 2px dashed blue ;
+    height: 100px;
+}
+
+/* #region space */
+
+.mrg_1 {
+    margin: 1rem;
+}
+
+/* #endregion space */
+
+
+.flex {
+    display: flex;
+}
+.flex_col {
+    flex-direction: column;
+}
+.jst_btw {
+    justify-content: space-between;
+}
+/* .jst_str{
+    justify-content: start;
+}
+.jst_end{
+    justify-content: end;
+} */
 
 /* #endregion utilities */
