@@ -3,151 +3,118 @@
     padding: 0;
     box-sizing: border-box;
 }
-main {
-    display: flex;
-    justify-content: center;
-}
-footer {
+.site_main {
+    max-width: 1920px;
+    width: 1920px;
+    height: 100vh;
     margin: 0 auto;
 }
-#site_sidebar{
-    width: 220px;
-    height: calc(100vh - 90px);
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-#site_content{
-    max-width: calc(1100px - 220px);
-    width: calc(100vw - 220px);
-    height: calc(100vh - 90px);
-    overflow: auto;
-}
-#site_footer{
-    max-width: 1100px;
-    width: 100vw;
+.footer {
+    background-color: var(--spfy-foot-lightdark);
     height: 90px;
 }
-.upgrade {
-    width: 100%;
-    margin: 2rem 0;
-}
-.container > a {
-    padding: 0 0.5rem;
-    text-decoration: none;
-}
-.row {
+.top{
+    height: calc(100vh - 90px);
     display: flex;
-    flex-direction: row;
-    justify-content: start;
-    flex-wrap: wrap;
-    gap: 8px
 }
-.col-2 > .card {
+.sidebar {
+    background-color: var(--spfy-side-black);
+    width: 230px;
     height: 100%;
+}
+.container_main {
+    width: calc(1920px - 230px);
+    height: 100%;
+}
+.upgrade {
+    background-color: var(--spfy-upgr-lightblack);
+    height: 50px;
+}
+.container {
+    background-color: var(--spfy-primary-dark);
+    height: calc(100vh - 140px);
+    padding: 0 2rem;
+    overflow-y: auto;
+}
+.container > h2 {
+    color: var(--spfy-txt-white);
+    font-size: 50px;
+    margin: 3rem 0 2rem;
+}
+.container > p {
+    color: var(--spfy-txt-secondary-lightgray);
+    font-size: 30px;
+    margin: -1rem 0 2rem;
+}
+.menu_top > a {
+    text-decoration: none;
+    color: var(--spfy-txt-secondary-lightgray);
+    padding: 0 0.5rem;
+}
+
+.hr_spec {
+    background-color: var(--spfy--success-greenlime);
+    width: 40%;
+    padding: 1px 0;
+    margin: 0.2rem auto;
+    border-radius: 30px;
+}
+.category {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
+    flex-wrap: wrap;
+}
+.col {
+    width: calc(100% / 12 * 2);
+    padding: 0 0.5rem;
 }
 .card {
-    width: 130px;
-    font-size: 14px;
+    height: 100%;
+    text-align: center;
 }
 .card > img {
-    width: 130px;
-    height: 130px;
+    width: 100%;
     aspect-ratio: 1/1;
     object-fit: cover;
 }
-.card > h3, p {
-    padding: 0.5rem 0;
+.card > h4 {
+    color: var(--spfy-txt-white);
+    font-size: 30px;
+    padding: 1rem 0;
 }
 .card > p {
-    font-size: 10px;
-    border-radius: 30px;
-}
-a > hr {
-    width: 30%;
-    margin: 0 30%;
-    padding: 1px 0;
-    background-color: greenyellow;
+    color: var(--spfy-txt-secondary-lightgray);
+    font-size: 20px;
 }
 
-/* #region sidebar */
 
 
-/* #endregion sidebar */
 
-/* #region utilities */
 
-.debug {
-    background-color: aquamarine;
-    border: 2px dashed brown ;
+:root {
+    --spfy-side-black: #000000;
+    --spfy-upgr-lightblack : #080b12;
+    --spfy-primary-dark: #141922;
+    --spfy-foot-lightdark: #282828;
+    --spfy-txt-white: #ffffff;
+    --spfy-txt-secondary-lightgray: #a3a3a3;
+    --spfy--success-greenlime: #adff2f;
 }
-/* debug_2{
-    background-color: green;
-    border: 2px dashed blue ;
-    height: 100px;
-}
-.debug_3 {
-    background-color: yellow;
-    border: 2px dashed purple ;
-    height: 100px;
-} */
-.debug_4 {
-    background-color: gray;
-    border: 2px dashed white ;
 
-} 
-/* #region space */
-.mrg_1 {
-    margin: 1rem;
+
+.pady-2 {
+    padding: 2rem 0;
 }
-.mx-05{
-    margin: 0 0.5rem;
-}
-.mx-1 {
-    margin: 0 1rem;
-}
-.my-1 {
-    margin: 1rem 0;
-}
-.m_bottom{
-    margin: 0 0 1rem;
-}
-.fnt_10 {
-    font-size: 10px;
+.pady-5 {
+    padding: 0 0 5rem;
 }
 .radius_50 {
     border-radius: 50%;
 }
 
-/* #endregion space */
-
-
-.btn{
-    border: 1px solid white;
-    padding: 1rem 2rem;
-    border-radius: 30px;
-    color: white;
-    background: black;
-    margin-right: 0.5rem;
-}
-.flex {
+.flex_jst_ctr {
     display: flex;
-}
-.flex_col {
-    flex-direction: column;
-}
-.jst_btw {
-    justify-content: space-between;
-}
-.jst_ctr{
     justify-content: center;
 }
-.jst_end{
-    justify-content: end;
+.align_ctr{
+    align-items: center;
 }
-
-/* #endregion utilities */
