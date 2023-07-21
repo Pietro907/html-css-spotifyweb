@@ -137,6 +137,9 @@
     aspect-ratio: 1/1;
     object-fit: cover;
 }
+.card > img:hover {
+   display: block;
+}
 .card > h4 {
     color: var(--spfy-txt-white);
     font-size: 30px;
