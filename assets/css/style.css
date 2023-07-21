@@ -36,6 +36,14 @@
     color: var(--spfy-txt-secondary-lightgray);
     font-size: 40px;
 }
+.col-12 {
+    height: 150px;
+    overflow: auto;
+}
+.col-12 > ul > li{
+    padding: 1rem 0;
+    height: 10px;
+}
 .upgrade {
     background-color: var(--spfy-upgr-lightblack);
     height: 90px;
