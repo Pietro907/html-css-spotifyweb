@@ -40,7 +40,15 @@
     color: var(--spfy-txt-secondary-lightgray);
     font-size: 40px;
 }
-.row_side_top .card img, .row_side_bottom .card img, .footer .col-4 h2,p {
+.row_side_top a:hover {
+    color: var(--spfy-txt-white);
+
+}
+.row_side_bottom a:hover {
+    color: var(--spfy-txt-white);
+
+}
+.row_side_top .card img, .row_side_bottom .card img {
     width: 30px;
 }
 .footer .col-4 img {
@@ -53,6 +61,10 @@
     padding: 0.5rem;
     margin: 0 0.5rem 0 0;
 }
+.col-4 {
+    width: calc(100% /12 * 4);
+}
+
 .col-12 {
     height: 150px;
     overflow: auto;
@@ -74,7 +86,7 @@
         transform: scale(1);
     }
     to {
-        transform: scale(1.5);
+        transform: scale(1.2);
     }
 }
 .container {
@@ -101,14 +113,6 @@
 .menu_top > a:hover {
     color: var(--spfy-txt-white);
 }
-
-.hr_spec {
-    background-color: var(--spfy--success-greenlime);
-    width: 40%;
-    padding: 1px 0;
-    margin: 0.2rem auto;
-    border-radius: 30px;
-}
 .category {
     display: flex;
     flex-wrap: wrap;
@@ -124,6 +128,9 @@
 .card {
     height: 100%;
     text-align: center;
+}
+.card_foot{
+    height: 100%;
 }
 .card > img {
     width: 100%;
@@ -142,8 +149,54 @@
 .minicard {
     width: 100%;
 }
-
-
+.hr_spec {
+    background-color: var(--spfy--success-greenlime);
+    width: 40%;
+    padding: 1px 0;
+    margin: 0.2rem auto;
+    border-radius: 30px;
+}
+.hr_1 {
+    width: 100%;
+    background-color: var(--spfy-txt-secondary-lightgray);
+    padding: 1px 0%;
+    position: absolute;
+    top: 8px;
+    left: 0;
+}
+.hr_2 {
+    background-color: var(--spfy-txt-white);
+    width: 40%;
+    padding: 1px 0;
+    margin: 0.2rem auto;
+    border-radius: 30px;
+    position: absolute;
+    top: 5px;
+    left: 0;
+}
+.hr_3 {
+    width: 60%;
+    background-color: var(--spfy-txt-secondary-lightgray);
+    padding: 1px 0%;
+    position: absolute;
+    top: 8px;
+    left: 0;
+}
+.hr_4 {
+    background-color: var(--spfy-txt-white);
+    width: 20%;
+    padding: 1px 0;
+    margin: 0.2rem auto;
+    border-radius: 30px;
+    position: absolute;
+    top: 5px;
+    left: 0;
+}
+.vol{
+    width: 100%;
+    position: relative;
+    margin: 0 0.5rem;
+}
 
 
 
@@ -175,13 +228,13 @@
     padding: 0.5rem 2rem;
     margin: 2rem 0.5rem;
     position: absolute;
-    right: 0;
+    right: 1rem;
     top: 0;
 }
 .icon_special {
     background-color: var(--spfy-txt-secondary-lightgray);
     color: var(--spfy-txt-white);
-    padding: 0.5rem;
+    padding: 0.2rem;
     border-radius: 50%;
 }
 .pady-1 {
@@ -195,6 +248,12 @@
 }
 .padx_05 {
     padding: 0 0.5rem;
+}
+.padx_1 {
+    padding: 0 1rem;
+}
+.padx_2 {
+    padding: 0 2rem;
 }
 .radius_50 {
     border-radius: 50%;

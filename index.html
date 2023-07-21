@@ -54,15 +54,15 @@
                     </div>
 
                     
-                    <div class="col-4 pady-2">
+                    <div style="width: 100%;" class="col-4 pady-2">
 
-                        <h4 class="txt_wht pady-1">PLAYLIST</h3>
+                        <h3 class="txt_wht pady-1">PLAYLIST</h3>
 
-                        <div class="card flex_col">
+                        <div class="card_foot flex_col">
 
                             <div class="minicard flex align_ctr">
                                 <i class="fa-solid fa-plus"></i>
-                                <h>Crea Playlist</h>
+                                <h3>Crea Playlist</h2>
                             </div>        
                             
                         </div>
@@ -89,9 +89,10 @@
                 <nav class="row_side_bottom ">
 
                     <div class="col_6">
-                            pa padx_05">Install app</span>
+                            
                         <div class="card flex align_ctr pady-1 ">
-                            <img src="./assets/img/download.svg" alt=""><span class="txt_lght_gray padx_05">Install app</span>
+                            <img src="./assets/img/download.svg" alt="">
+                            <a class="padx_05" href="/">Install app</a>
                         </div>
                     </div>
 
@@ -99,7 +100,8 @@
 
                     <div class="col_6 flex align_ctr pady-1">
                         <div class="card flex align_ctr pady-1">
-                            <img src="./assets/img/profile.svg" alt="" class="icon_special"><span class="txt_lght_gray padx_05">John Doe</span>
+                            <img src="./assets/img/profile.svg" alt="" style="width: 25px;" class="icon_special">
+                            <a class="padx_05" href="/">John Doe</a>
                         </div>
                     </div>
 
@@ -235,28 +237,64 @@
             </div>
         </div>
 
-        <div class="footer">
-            <div class="row_foot flex align_ctr">
-                <div class="col-4 flex align_ctr ">
-                    <div class="card padx_05">
+        <div class="footer padx_1">
+            <div class="row_foot flex align_ctr jst_btw pady-1">
+                <div class="col-4 flex align_ctr">
+                    <div class="card_foot padx_05">
                         <img src="./assets/img/sinister.jpeg" alt="">
                     </div>
-                    <div class="card padx_05">
+                    <div class="card_foot">
                         <h2>Sinister</h2>
-                        <p>Brano Nome</p>
+                        <p class="txt_lght_gray">Brano Nome</p>
+                    </div>
+                    <div class="card_foot flex txt_wht padx_">
+                        <i class="fa-regular fa-heart"></i>
+                        <i class="fa-regular fa-folder padx_05"></i>
                     </div>
                 </div>
-                <div class="col-4 flex align_ctr txt_lght_gray">
-                    <div class="card"><i class="fa-regular fa-heart"></i></div>
-                    <div class="card padx_05"><i class="fa-regular fa-folder"></i></div>
+                
+                    
+                <div class="col-4 flex_col"> 
+                    <div style="margin: 0 0 0 1rem;" class="card_foot flex align_ctr">
+                        <i class="fa-solid fa-shuffle padx_05"></i>
+                        <i class="fa-solid fa-backward-step padx_05"></i>
+                        <i style="font-size: 50px;" class="fa-regular fa-circle-play padx_05"></i>
+                        <i class="fa-solid fa-forward-step padx_05"></i>
+                        <i class="fa-solid fa-arrow-rotate-right padx_05"></i>
+                    </div>
+                    <div class="col-4 flex">
+                        <span>0:25</span>
+                        <div class="vol">
+                            <div class="hr_1"></div>
+                            <div class="hr_2"></div>
+                        </div>
+                        <span>4:35</span>
+                    </div>
+                    
+                    
                 </div>
-                <div class="col-4 flex align_ctr">
-                    <div class="card padx_05"><i class="fa-solid fa-shuffle"></i></div>
-                    <div class="card padx_05"><i class="fa-solid fa-backward-step"></i></div>
-                    <div class="card padx_05"><i class="fa-regular fa-circle-play"></i></div>
-                    <div class="card padx_05"><i class="fa-solid fa-forward-step"></i></div>
-                    <div class="card padx_05"><i class="fa-solid fa-arrow-rotate-right"></i></div>
+
+                <div class="col-4 flex">
+                    <div class="card_foot flex">
+                        <i class="fa-solid fa-bars padx_05"></i>
+                        <i class="fa-solid fa-display padx_05"></i>
+                        <i class="fa-solid fa-volume-high padx_05"></i>
+                    </div>
+                    <div class="vol">
+                        <div class="hr_3"></div>
+                        <div class="hr_4"></div>
+                    </div>
                 </div>
+                
+                
+                <!-- <div class="col-4 flex align_ctr txt_lght_gray">
+                    
+                    <div class="card padx_05">
+                        <i class="fa-regular fa-heart"></i>
+                        <i class="fa-regular fa-folder"></i>
+                    </div>
+                </div> -->
+                
             </div>
         </div>
 
