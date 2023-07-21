@@ -26,7 +26,7 @@
     padding: 0 2rem;
 }
 .logo {
-    padding: 1rem;
+    padding: 1rem 2rem 1rem 0;
 }
 .container_main {
     width: calc(1920px - 230px);
@@ -54,7 +54,7 @@
 }
 .container {
     background-color: var(--spfy-primary-dark);
-    height: calc(100vh - 140px);
+    height: calc(100vh - 180px);
     padding: 0 2rem;
     overflow-y: auto;
 }
@@ -114,6 +114,9 @@
     color: var(--spfy-txt-secondary-lightgray);
     font-size: 20px;
 }
+.minicard {
+    width: 100%;
+}
 
 
 
@@ -163,10 +166,15 @@
 .around_30 {
     border-radius: 30px;
 }
-
+.flex{
+    display: flex;
+}
 .flex_jst_ctr {
     display: flex;
     justify-content: center;
+}
+.jst_btw {
+    justify-content: space-between;
 }
 .flex_col {
     flex-direction: column;
