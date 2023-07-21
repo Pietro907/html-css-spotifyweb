@@ -38,7 +38,19 @@
 }
 .upgrade {
     background-color: var(--spfy-upgr-lightblack);
-    height: 50px;
+    height: 90px;
+    position: relative;
+}
+.upgrade > input:hover {
+    animation: grow 500ms;
+}
+@keyframes grow {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.5);
+    }
 }
 .container {
     background-color: var(--spfy-primary-dark);
@@ -128,6 +140,16 @@
 .list_style_none{
     list-style: none;
 }
+.btn {
+    background-color: var(--spfy-upgr-lightblack);
+    color: var(--spfy-txt-white);
+    border: 1px solid var(--spfy-txt-white);
+    padding: 0.5rem 2rem;
+    margin: 2rem 0.5rem;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
 
 .pady-2 {
     padding: 2rem 0;
@@ -137,6 +159,9 @@
 }
 .radius_50 {
     border-radius: 50%;
+}
+.around_30 {
+    border-radius: 30px;
 }
 
 .flex_jst_ctr {
@@ -161,4 +186,6 @@
     .col-3-md {
         width: calc(100% / 12 * 3);
     }
+    .sidebar {
+        background-color: red; }
 }
