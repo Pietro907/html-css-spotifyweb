@@ -5,7 +5,7 @@
 }
 .site_main {
     max-width: 1920px;
-    width: 1920px;
+    width: 100vw;
     height: 100vh;
     margin: 0 auto;
 }
@@ -63,6 +63,7 @@
 }
 .col-4 {
     width: calc(100% /12 * 4);
+    margin: 0.3rem;
 }
 
 .col-12 {
@@ -123,7 +124,6 @@
 }
 .col-4 {
     width: calc(100% /12 * 4);
-    color: var(--spfy-txt-white);
 }
 .card {
     height: 100%;
@@ -132,14 +132,16 @@
 .card_foot{
     height: 100%;
 }
+.card_foot > i:hover, p:hover {
+    color: var(--spfy-txt-white);
+}
+
 .card > img {
     width: 100%;
     aspect-ratio: 1/1;
     object-fit: cover;
 }
-.card > img:hover {
-   display: block;
-}
+
 .card > h4 {
     color: var(--spfy-txt-white);
     font-size: 30px;
@@ -177,6 +179,9 @@
     top: 5px;
     left: 0;
 }
+.hr_2:hover {
+    background-color: var(--spfy--success-greenlime);
+}
 .hr_3 {
     width: 60%;
     background-color: var(--spfy-txt-secondary-lightgray);
@@ -195,6 +200,32 @@
     top: 5px;
     left: 0;
 }
+.hr_4:hover {
+    background-color: var(--spfy--success-greenlime);
+}
+.hr_point_1{
+    width: 1px;
+    height: 1px;
+    padding: 0.3rem;
+    border-radius: 50%;
+    position: absolute;
+    top: 4.5px;
+    left: 3%;
+}
+.hr_point_1:hover {
+    background-color: var(--spfy-txt-white);
+}
+.hr_point_2{
+    background-color: var(--spfy-txt-white);
+    width: 1px;
+    height: 1px;
+    padding: 0.3rem;
+    border-radius: 50%;
+    position: absolute;
+    top: 4.3px;
+    left: 19%;
+}
+
 .vol{
     width: 100%;
     position: relative;
@@ -279,6 +310,9 @@
 }
 .align_ctr{
     align-items: center;
+}
+.jst_end{
+    justify-content: end;
 }
 
 @media screen and (max-width: 1100px) {
