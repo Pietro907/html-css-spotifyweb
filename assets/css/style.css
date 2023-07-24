@@ -154,7 +154,9 @@
     aspect-ratio: 1/1;
     object-fit: cover;
 }
-
+i > .font-play {
+    font-size: 50px;
+}
 .overlay {
     width: 100%;
     height: 100%;
@@ -218,6 +220,9 @@
 .hr_2:hover {
     background-color: var(--spfy--success-greenlime);
 }
+.hr_2:hover + .hr_point_1{
+    display: block;
+}
 .hr_3 {
     width: 60%;
     background-color: var(--spfy-txt-secondary-lightgray);
@@ -243,16 +248,15 @@
     display: block;
 }
 .hr_point_1{
+    background-color: var(--spfy-txt-white);
     width: 1px;
     height: 1px;
     padding: 0.3rem;
     border-radius: 50%;
     position: absolute;
     top: 4.5px;
-    left: 3%;
-}
-.hr_point_1:hover {
-    background-color: var(--spfy-txt-white);
+    left: 40%;
+    display: none;
 }
 .hr_point_2{
     background-color: var(--spfy-txt-white);
@@ -265,8 +269,6 @@
     left: 19%;
     display: none;
 }
-
-
 .vol{
     width: 100%;
     position: relative;
@@ -330,6 +332,9 @@
 .padx_2 {
     padding: 0 2rem;
 }
+.padx_0007 {
+    padding: 0 0 0 7;
+}
 .radius_50 {
     border-radius: 50%;
 }
@@ -379,8 +384,77 @@
     .col-6-md {
         width: calc(100% / 12 * 6);
     }
-    .sidebar_mobile{
+    h2 {
+        font-size: 15px;
+    }
+    .card_foot > p {
+        font-size: 10px;
+    }
+    .padx_sm {
+        padding: 0 0 0 1rem;
+    }
+    .sidebar_mobile, hr {
         display: none;
+    }
+    .row_foot-sm {
+        padding: 1rem 0;
+    }
+}
+@media screen and (max-width: 600px) {
+    .site_main {
+        min-width: 400px;
+    }
+    .sidebar_mobile{
+        display: block;
+        padding: 0;
+    }
+    .sidebar_mobile .row_side_top > .logo {
+        padding: 0.3rem;
+        margin: 0 0.8rem 0 0;
+    }
+    .sidebar_mobile .row_side_top .col-4 > .card {
+        display: block;
+    }
+    .sidebar_mobile .row_side_top {
+        width: 100%;
+        padding: 0 0.5rem 0 0;
+        margin-left: 0.7rem;
+    }
+    .sidebar_mobile .row_side_bottom .pady-1 {
+        padding: 0;
+    }
+    .dsp_blck-sm {
+        display: block;
+    }
+    .row_foot-sm {
+        padding: 1rem 0;
+    }
+    .row_foot .col-4 .card_foot > i {
+        font-size: 10px;
+    }
+    .mrg-sm {
+        margin: 11rem 1rem 0;
+    }
+    .px-1-sm {
+        padding-right: 4px;
+    }
+    .px-sm {
+        padding: 0;
+    }
+    .sidebar {
+        display: none;
+    }
+    h2 {
+        font-size: 15px;
+    }
+    .card_foot > p {
+        font-size: 10px;
+    }
+    .footer {
+        overflow: hidden;
+    }
+    .padx_sm {
+        padding: 0 0 0 1rem;
     }
 }
 
